@@ -128,12 +128,17 @@ void LaunchXell()
 
 void __cdecl main()
 {
-    uint8_t cpu_key[0x10];
+    union uCPUkey
+    {
+        uint8_t a8[0x10];
+        uint32_t a32[4];
+    };
+    uCPUkey cpu_key;
     // thanks libxenon!
     uint8_t rol_led_buf[16] = {0x99,0x00,0x00,0,0,0,0,0,0,0,0,0,0,0,0,0};
     int has_xell = 0;
 
-    memset(cpu_key, 0, sizeof(cpu_key));
+    memset(cpu_key.a8, 0, sizeof(cpu_key.a8));
 
     DbgPrint("FreeMyXe!\n");
 
@@ -156,15 +161,18 @@ void __cdecl main()
     }
 
     // read out the CPU key
-    ReadHypervisor(cpu_key, 0x20, sizeof(cpu_key));
+    ReadHypervisor(cpu_key.a8, 0x20, sizeof(cpu_key.a8));
 
+    char CPUkeybuf[128];
+    memset(CPUkeybuf, 0, sizeof(CPUkeybuf));
+    snprintf(CPUkeybuf, sizeof(CPUkeybuf), "%08X%08X%08X%08X", cpu_key.a32[0], cpu_key.a32[1], cpu_key.a32[2], cpu_key.a32[3]);
+    
     // check if we have a xell file
     has_xell = FSFileExists("GAME:\\xell-1f.bin") || FSFileExists("GAME:\\xell-gggggg.bin");
 
-    DbgPrint("CPU key: %08X%08X%08X%08X\n",
-        *(uint32_t *)(cpu_key + 0x0), *(uint32_t *)(cpu_key + 0x4), *(uint32_t *)(cpu_key + 0x8), *(uint32_t *)(cpu_key + 0xC));
+    DbgPrint("CPU key: %s\n", CPUkeybuf);
 
-    wsprintfW(dialog_text_buffer, L"About to start patching HV and kernel...\n\nYour CPU key is:\n%08X%08X%08X%08X\n\nWrite that down and keep it safe!", *(uint32_t *)(cpu_key + 0x0), *(uint32_t *)(cpu_key + 0x4), *(uint32_t *)(cpu_key + 0x8), *(uint32_t *)(cpu_key + 0xC));
+    wsprintfW(dialog_text_buffer, L"About to start patching HV and kernel...\n\nYour CPU key is:\n%hs\n\nWrite that down and keep it safe!", CPUkeybuf);
 
     if (has_xell)
     {
@@ -261,6 +269,6 @@ void __cdecl main()
     Sleep(500);
 
     buttons[0] = L"Yay!";
-    wsprintfW(dialog_text_buffer, L"Hypervisor and kernel have been patched!\n\nYour CPU key is:\n%08X%08X%08X%08X\n\nSource code for FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nHave fun!", *(uint32_t *)(cpu_key + 0x0), *(uint32_t *)(cpu_key + 0x4), *(uint32_t *)(cpu_key + 0x8), *(uint32_t *)(cpu_key + 0xC));
+    wsprintfW(dialog_text_buffer, L"Hypervisor and kernel have been patched!\n\nYour CPU key is:\n%hs\n\nSource code for FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nHave fun!", CPUkeybuf);
     MessageBox(dialog_text_buffer);
 }
