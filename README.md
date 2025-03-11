@@ -33,7 +33,7 @@ for some.
 * Allows more homebrew be able to be launched without erroring back to
   dashboard.
 * Fixes the ring of light / controller syncing bug after using BadUpdate.
-* Allows launching `xell-1f.bin` from the payload folder.
+* Allows launching `xell-1f.bin` from the `BadUpdatePayload` folder
 * Patches USB controller authentication check (a-la "UsbdSecPatch") to let
   certain compatible controllers and adapters work. That's for you, Mario.
 
