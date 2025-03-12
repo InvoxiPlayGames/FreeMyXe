@@ -27,6 +27,16 @@ LocalisationMessages_t spanish = {
     L"El hipervisor y el kernel han sido parcheados!\n\nLa clave de tu CPU es:\n%S\n\nC\u00F3digo fuente de FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nDivi\u00E9rtete!"
 };
 
+// translation provided by veselcraft/tailsxsu
+LocalisationMessages_t russian = {
+    L"Сейчас начнём патчить гипервизор и ядро...\n\nТвой ключ процессора:\n%S\n\nОбязательно сохрани его и храни от чужих глаз!",
+    L"Замечательно",
+    L"Ура!",
+    L"Запустить XeLL",
+    L"XeLL не запускается?! Похуй, патчим гипервизор и ядро...",
+    L"Гипервизор и ядро пропатчены!\n\nТвой ключ процессора:\n%S\n\nИсходники FreeMyXe можно посмотреть по этой ссылке:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nРазвлекайся!"
+};
+
 LocalisationMessages_t *currentLocalisation = &english;
 
 static LPWSTR buttons[1] = {L"OK"};
@@ -217,12 +227,13 @@ void __cdecl main()
 
     switch (XGetLanguage())
     {
-        case XC_LANGUAGE_ENGLISH:
-            currentLocalisation = &english;
-            break;
         case XC_LANGUAGE_SPANISH:
             currentLocalisation = &spanish;
             break;
+        case XC_LANGUAGE_RUSSIAN:
+            currentLocalisation = &russian;
+            break;
+        case XC_LANGUAGE_ENGLISH:           // uh why would we set english locale for the second time
         default:
             currentLocalisation = &english;
             break;
