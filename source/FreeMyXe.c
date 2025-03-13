@@ -48,13 +48,29 @@ LocalisationMessages_t brazilian_portuguese = {
 };
 
 // translation provided by chackAJMCPE and DoruDolasu
+/*
+"Konsola gotowa na łatanie HV i jądra...
+Twój klucz CPU to:
+Zapisz go gdzieś i trzymaj w bezpiecznym miejscu!"
+"OK"
+"Jupii!!"
+"Zamiast tego uruchom XeLL"
+"XeLL nie wystartował?! No trudno, w takim razie załatamy HV i jądro...",
+"Hiperwizor i jądro zostały załatane!
+Twój klucz CPU to:
+Kod źródłowy FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe
+Miłej zabawy!"
+};
+
+*/
+
 LocalisationMessages_t polish = {
     L"Konsola gotowa na \u0142atanie HV i j\u0105dra...\n\nTw\u00f3j klucz CPU to:\n%S\n\nZapisz go gdzie\u015b i trzymaj w bezpiecznym miejscu!",
     L"OK",
     L"Jupii!!",
     L"Zamiast tego uruchom XeLL",
-    L"XeLL nie wystartował?! No trudno, w takim razie za\u0142atamy HV i j\u0105dro...",
-    L"Hiperwizor i j\u0105dro zosta\u0142y za\u0142atane!\n\nTw\u00f3j klucz CPU to:\n%S\n\nKod źr\u00f3d\u0142owy FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nMił\u0142ej zabawy!"
+    L"XeLL nie wystartowa\u0142?! No trudno, w takim razie za\u0142atamy HV i j\u0105dro...",
+    L"Hiperwizor i j\u0105dro zosta\u0142y za\u0142atane!\n\nTw\u00f3j klucz CPU to:\n%S\n\nKod \u017ar\u00f3d\u0142owy FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nMi\u0142ej zabawy!"
 };
 
 
