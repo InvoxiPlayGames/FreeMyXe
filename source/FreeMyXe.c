@@ -53,7 +53,7 @@ LocalisationMessages_t polish = {
     L"OK",
     L"Jupii!!",
     L"Zamiast tego uruchom XeLL",
-    L"XeLL nie wystartował?! No trudno, za\u0142atamy HV i j\u0105dro...",
+    L"XeLL nie wystartował?! No trudno, w takim razie za\u0142atamy HV i j\u0105dro...",
     L"Hiperwizor i j\u0105dro zosta\u0142y za\u0142atane!\n\nTw\u00f3j klucz CPU to:\n%S\n\nKod źr\u00f3d\u0142owy FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nMił\u0142ej zabawy!"
 };
 
