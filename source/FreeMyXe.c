@@ -47,14 +47,14 @@ LocalisationMessages_t brazilian_portuguese = {
     L"O Hipervisor e o Kernel foram corrigidos!\n\nSua chave de CPU \u00E9:\n%S\n\nC\u00F3digo fonte para FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nAproveite!"
 };
 
-// translation provided by DoruDolasu
+// translation provided by chackAJMCPE and DoruDolasu
 LocalisationMessages_t polish = {
-    L"Konsola gotowa na \u0142atanie HV oraz j\u0105dra...\n\nTw\u00f3j klucz CPU to:\n%S\n\nZapisz go gdzie\u015b i trzymaj w bezpiecznym miejscu!",
+    L"Konsola gotowa na \u0142atanie HV i j\u0105dra...\n\nTw\u00f3j klucz CPU to:\n%S\n\nZapisz go gdzie\u015b i trzymaj w bezpiecznym miejscu!",
     L"OK",
     L"Jupii!!",
     L"Zamiast tego uruchom XeLL",
-    L"Uruchamianie XeLL nieudane?! No trudno, to za\u0142atamy HV i j\u0105dro...",
-    L"Hypervisor i j\u0105dro zostały załatane!\n\nTw\u00f3j klucz CPU to:\n%S\n\nKod źr\u00f3d\u0142owy FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nMił\u0142ej zabawy!"
+    L"XeLL nie wystartował?! No trudno, za\u0142atamy HV i j\u0105dro...",
+    L"Hiperwizor i j\u0105dro zosta\u0142y za\u0142atane!\n\nTw\u00f3j klucz CPU to:\n%S\n\nKod źr\u00f3d\u0142owy FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nMił\u0142ej zabawy!"
 };
 
 
