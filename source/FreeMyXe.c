@@ -48,13 +48,14 @@ LocalisationMessages_t polish = {
 };
 
 // translation provided by Xyozus
+// fixed/improved by lucmsilva651
 LocalisationMessages_t brazilian_portuguese = {
-    L"Prestes a come\u00E7ar a aplicar patches no HV e no Kernel...\n\nSua chave de CPU \u00E9:\n%S\n\nEscreva isso e guarde em algum lugar seguro!",
+    L"Prestes a come\u00E7ar os patches no HV e no Kernel...\n\nSua chave de CPU \u00E9:\n%S\n\nAnote isso e guarde em algum lugar seguro!",
     L"OK",
     L"De acordo!",
-    L"Inicie o XeLL em vez disso",
-    L"Falha ao iniciar o XeLL?! Ah, bem, vou corrigir o HV e o Kernel de qualquer maneira...",
-    L"O Hipervisor e o Kernel foram corrigidos!\n\nSua chave de CPU \u00E9:\n%S\n\nC\u00F3digo fonte para FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nAproveite!"
+    L"Iniciar o XeLL ao vez disso",
+    L"Falha ao iniciar o XeLL?! Meh, vou fazer o patch no HV e no Kernel mesmo assim...",
+    L"Foram aplicados os patches no HV e no Kernel!\n\nSua chave de CPU \u00E9:\n%S\n\nC\u00F3digo fonte para o FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nAproveita!"
 };
 
 // translation provided by Animadoria
