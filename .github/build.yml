@@ -1,17 +1,5 @@
 name: FreeMyXe Compiler
 
-on:
-  push:
-    paths-ignore:
-      - '.github/**'
-      - '!.github/workflows/build.yml'
-      - 'README.md'
-  pull_request:
-    paths-ignore:
-      - '.github/**'
-      - '!.github/workflows/build.yml'
-      - 'README.md'
-
 jobs:
   Xbox:
     if: github.repository == 'InvoxiPlayGames/FreeMyXe'
