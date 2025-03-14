@@ -48,7 +48,9 @@ for some.
 
 The patches made by FreeMyXe are not fully compatible with running Original Xbox
 games. Before starting any Original Xbox title, you **must** launch
-"OGXboxPrep.xex" first, and after you're done you must launch it again.
+"OGXboxPrep.xex" first to patch some items required for Original Xbox, 
+and after you're done with your game session you **must** launch it again to revert the patches made 
+to allow the Xbox Emulator XeFu to function correctly.
 This is included in FreeMyXe beta4 and above.
 
 ## TODO
