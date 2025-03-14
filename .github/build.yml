@@ -14,6 +14,7 @@ on:
 
 jobs:
   Xbox:
+    if: github.repository == 'InvoxiPlayGames/FreeMyXe'
     runs-on: windows-2019
     timeout-minutes: 10
 
@@ -30,28 +31,15 @@ jobs:
           Invoke-WebRequest -OutFile tools.zip $Env:BUILD_TOOLS
           7z x tools.zip -otools
 
-      - name: Compile (debug)
+      - name: Compile
         env:
           XEDK: ${{ github.workspace }}/tools
         run: |
           make clean
-          make xbox -j2 DEBUG=1
+          make -j2
 
-      - name: Upload binaries (debug)
+      - name: Upload binaries
         uses: actions/upload-artifact@v4
         with: 
-          name: FreeMyXe-Debug
-          path: out/*
-
-      - name: Compile (no-debug)
-        env:
-          XEDK: ${{ github.workspace }}/tools
-        run: |
-          make clean
-          make xbox -j2
-
-      - name: Upload binaries (release)
-        uses: actions/upload-artifact@v4
-        with: 
-          name: FreeMyXe-Release
-          path: out/*
+          name: FreeMyXe-Artifact
+          path: out/FreeMyXe.xex
