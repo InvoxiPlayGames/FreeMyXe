@@ -1,0 +1,57 @@
+name: FreeMyXe Compiler
+
+on:
+  push:
+    paths-ignore:
+      - '.github/**'
+      - '!.github/workflows/build.yml'
+      - 'README.md'
+  pull_request:
+    paths-ignore:
+      - '.github/**'
+      - '!.github/workflows/build.yml'
+      - 'README.md'
+
+jobs:
+  Xbox:
+    runs-on: windows-2019
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Download tools
+        env:
+          BUILD_TOOLS: ${{ secrets.BUILD_TOOLS_FILE }}
+        run: |
+          Invoke-WebRequest -OutFile tools.zip $Env:BUILD_TOOLS
+          7z x tools.zip -otools
+
+      - name: Compile (debug)
+        env:
+          XEDK: ${{ github.workspace }}/tools
+        run: |
+          make clean
+          make xbox -j2 DEBUG=1
+
+      - name: Upload binaries (debug)
+        uses: actions/upload-artifact@v4
+        with: 
+          name: FreeMyXe-Debug
+          path: out/*
+
+      - name: Compile (no-debug)
+        env:
+          XEDK: ${{ github.workspace }}/tools
+        run: |
+          make clean
+          make xbox -j2
+
+      - name: Upload binaries (release)
+        uses: actions/upload-artifact@v4
+        with: 
+          name: FreeMyXe-Release
+          path: out/*
