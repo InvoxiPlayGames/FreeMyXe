@@ -77,7 +77,7 @@ Thank you to everyone who helped translate FreeMyXe!
 * Spanish - by [lexd0g](https://github.com/lexd0g)
 * French (Canadian) - by [needmorepaper](https://github.com/needmorepaper)
 * Portuguese (Portugal) - by [Animadoria](https://github.com/Animadoria)
-* Portuguese (Brazilian) - by [Xyozus](https://github.com/Xyozus)
+* Portuguese (Brazilian) - by [Xyozus](https://github.com/Xyozus) and [lucmsilva651](https://github.com/lucmsilva651)
 * German - by [tuxuser](https://github.com/tuxuser)
 * Polish - by [chackAJMCPE](https://github.com/chackAJMCPE) and [DoruDoLasu](https://github.com/DoruDoLasu)
 * Russian - by [eversiege](https://github.com/eversiege) and [veselcraft](https://github.com/veselcraft)
