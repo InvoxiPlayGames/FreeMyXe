@@ -14,7 +14,7 @@ LocalisationMessages_t english = {
     L"Yay!",
     L"Launch XeLL instead",
     L"Failed to launch XeLL?! Oh well, I'll patch the HV and kernel anyway...",
-    L"Hypervisor and kernel have been patched!\n\nYour CPU key is:\n%S\n\nSource code for FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nHave fun!"
+    L"Hypervisor and kernel have been patched!\n\nYour CPU key is:\n%S\n\nSource code for FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nHave fun!\n\nWarning: This exploit is temporary!\nWhich may not be compatible with settings,\nintended for consoles with RGH/JTAG mods.\nUse at your own risk!"
 };
 
 // translation provided by lexd0g
