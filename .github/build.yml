@@ -1,5 +1,9 @@
 name: FreeMyXe Compiler
 
+on:
+  push:
+  pull_request:
+
 jobs:
   Xbox:
     if: github.repository == 'InvoxiPlayGames/FreeMyXe'
