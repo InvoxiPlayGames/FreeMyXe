@@ -52,7 +52,7 @@ LocalisationMessages_t polish = {
 LocalisationMessages_t brazilian_portuguese = {
     L"Prestes a come\u00E7ar os patches no HV e no Kernel...\n\nSua chave de CPU \u00E9:\n%S\n\nAnote isso e guarde em algum lugar seguro!",
     L"OK",
-    L"De acordo!",
+    L"A\u00ED sim!",
     L"Iniciar o XeLL ao vez disso",
     L"Falha ao iniciar o XeLL?! Meh, vou fazer o patch no HV e no Kernel mesmo assim...",
     L"Foram aplicados os patches no HV e no Kernel!\n\nSua chave de CPU \u00E9:\n%S\n\nC\u00F3digo fonte para o FreeMyXe:\ngithub.com/InvoxiPlayGames/FreeMyXe\n\nAproveita!"
