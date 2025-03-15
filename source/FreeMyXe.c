@@ -113,6 +113,16 @@ LocalisationMessages_t chinese_simplified = {
     L"Hypervisor \u548C\u5185\u6838\u5DF2\u88AB\u4FEE\u8865\uFF01\n\n\u4F60\u7684 CPU \u5BC6\u94A5\u662F\uFF1A\n%S\n\nFreeMyXe \u7684\u6E90\u4EE3\u7801\uFF1A\ngithub.com/FreeMyXe/FreeMyXe\n\n\u73A9\u5F97\u5F00\u5FC3\uFF01"
 };
 
+// translation provided by Razorbacktrack
+LocalisationMessages_t italian = {
+    L"Sto per iniziare a patchare l'Hypervisor e il kernel...\n\nLa tua CPU Key \u00E8:\n%S\n\nScrivila e conservala accuratamente!",
+    L"OK",
+    L"Fantastico!",
+    L"Avvia XeLL invece",
+    L"Non riesco ad avviare XeLL?! Beh, patcher\u00F2 comunque l'Hypervisor e il kernel...",
+    L"L'Hypervisor e il kernel sono stati patchati!\n\nLa tua CPU Key \u00E8:\n%S\n\nCodice sorgente di FreeMyXe:\ngithub.com/FreeMyXe/FreeMyXe\n\nDivertiti!"
+};
+
 LocalisationMessages_t *currentLocalisation = &english;
 
 static LPWSTR buttons[1] = {L"OK"};
