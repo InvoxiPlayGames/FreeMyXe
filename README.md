@@ -81,3 +81,4 @@ Thank you to everyone who helped translate FreeMyXe!
 * Russian - by [eversiege](https://github.com/eversiege) and [veselcraft](https://github.com/veselcraft)
 * Korean - by [Helloyunho](https://github.com/Helloyunho)
 * Chinese (Simplified) - by [Mez0ne](https://github.com/Mez0ne)
+* Italian - by [Razorbacktrack](https://github.com/Razorbacktrack)
